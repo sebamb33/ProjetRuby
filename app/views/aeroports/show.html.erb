@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @aeroport %>
+
+<div>
+  <%= link_to "Edit this aeroport", edit_aeroport_path(@aeroport) %> |
+  <%= link_to "Back to aeroports", aeroports_path %>
+
+  <%= button_to "Destroy this aeroport", @aeroport, method: :delete %>
+</div>

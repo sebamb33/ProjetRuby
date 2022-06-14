@@ -1,0 +1,27 @@
+<%= form_with(model: aeroport) do |form| %>
+  <% if aeroport.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(aeroport.errors.count, "error") %> prohibited this aeroport from being saved:</h2>
+
+      <ul>
+        <% aeroport.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :libelle, style: "display: block" %>
+    <%= form.text_field :libelle %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

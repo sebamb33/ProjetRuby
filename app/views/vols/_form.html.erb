@@ -1,0 +1,52 @@
+<%= form_with(model: vol) do |form| %>
+  <% if vol.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(vol.errors.count, "error") %> prohibited this vol from being saved:</h2>
+
+      <ul>
+        <% vol.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :numero, style: "display: block" %>
+    <%= form.number_field :numero %>
+  </div>
+
+  <div>
+    <%= form.label :id_aeroport_depart, style: "display: block" %>
+    <%= form.number_field :id_aeroport_depart %>
+  </div>
+
+  <div>
+    <%= form.label :id_aeroport_arrivee, style: "display: block" %>
+    <%= form.number_field :id_aeroport_arrivee %>
+  </div>
+
+  <div>
+    <%= form.label :duree, style: "display: block" %>
+    <%= form.number_field :duree %>
+  </div>
+
+  <div>
+    <%= form.label :date_depart, style: "display: block" %>
+    <%= form.datetime_field :date_depart %>
+  </div>
+
+  <div>
+    <%= form.label :nb_place_economique, style: "display: block" %>
+    <%= form.number_field :nb_place_economique %>
+  </div>
+
+  <div>
+    <%= form.label :nb_place_business, style: "display: block" %>
+    <%= form.number_field :nb_place_business %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
