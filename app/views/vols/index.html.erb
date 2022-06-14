@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Vols</h1>
+
+<div id="vols">
+  <% @vols.each do |vol| %>
+    <%= render vol %>
+    <p>
+      <%= link_to "Show this vol", vol %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New vol", new_vol_path %>

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @vol %>
+
+<div>
+  <%= link_to "Edit this vol", edit_vol_path(@vol) %> |
+  <%= link_to "Back to vols", vols_path %>
+
+  <%= button_to "Destroy this vol", @vol, method: :delete %>
+</div>
