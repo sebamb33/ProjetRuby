@@ -63,6 +63,7 @@ class VolsController < ApplicationController
       @vol = Vol.find(params[:id])
     end
 
+
     # Only allow a list of trusted parameters through.
     def vol_params
       params.require(:vol).permit(:numero, :id_aeroport_depart, :id_aeroport_arrivee, :duree, :date_depart, :nb_place_economique, :nb_place_business)

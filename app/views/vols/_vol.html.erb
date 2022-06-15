@@ -5,13 +5,13 @@
   </p>
 
   <p>
-    <strong>Id aeroport depart:</strong>
-    <%= vol.departure_aeroport_id %>
+    <strong>Aeroport de départ</strong>
+    <%= vol.departure_aeroport.libelle %>
   </p>
 
   <p>
-    <strong>Id aeroport arrivee:</strong>
-    <%= vol.arrival_aeroport_id %>
+    <strong>Aeroport d'arrivee</strong>
+    <%= vol.arrival_aeroport.libelle %>
   </p>
 
   <p>
@@ -21,7 +21,7 @@
 
   <p>
     <strong>Date de depart:</strong>
-    <%= vol.date_depart %>
+    <%= vol.date_depart.strftime("%d %B %Y") %>
   </p>
 
   <p>
