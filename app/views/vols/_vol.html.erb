@@ -1,41 +1,37 @@
 <div id="<%= dom_id vol %>" class="vol">
-  <p>
+
+  <div class="number">
     <strong>Numero:</strong>
-    <%= vol.numero %>
-  </p>
+    <div>
+      <%= vol.numero %>
+    </div>
+  </div>
 
-  <p>
-    <strong>Aeroport de départ</strong>
-    <%= vol.departure_aeroport.libelle %>
-  </p>
+  <div class="voyage">
+    <div class="depart">
+        <div class="aeroport">
+          <%= vol.departure_aeroport.libelle %>
+        </div>
+        <div class="date">
+          <%= vol.date_depart.strftime("%d %B %Y  %H:%M") %>
+        </div>
+    </div>
+    <div class="img-plane">
+      <%= image_tag "plane.png" %>
+    </div>
+    <div class="arrivee">
+      <div class="aeroport">
+        <%= vol.arrival_aeroport.libelle %>
+      </div>
+      <div class="date">
+        <%= (vol.date_depart + vol.duree.minutes).strftime("%d %B %Y  %H:%M") %>
+      </div>
+    </div>
+  </div>
 
-  <p>
-    <strong>Aeroport d'arrivee</strong>
-    <%= vol.arrival_aeroport.libelle %>
-  </p>
-
-  <p>
-    <strong>Date de depart:</strong>
-    <%= vol.date_depart.strftime("%d %B %Y  %H:%M") %>
-  </p>
-
-  <p>
-    <strong>Date d'arrivée:</strong>
-    <%= (vol.date_depart + vol.duree.minutes).strftime("%d %B %Y  %H:%M") %>
-  </p>
-
-  <p>
-    <strong>Nb place economique:</strong>
-    <%= vol.nb_place_economique %>
-  </p>
-
-  <p>
-    <strong>Nb place business:</strong>
-    <%= vol.nb_place_business %>
-  </p>
-
-  <p>
+  <div class="vol-option">
     <%= link_to "Show this vol", vol %>
-  </p>
+  </div>
+
 
 </div>

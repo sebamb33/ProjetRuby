@@ -53,13 +53,55 @@ a{
 }
 
 .vol{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background: #eeeeee;
-    padding: 2px 20px;
-    margin: 20px auto;
+    padding: 20px;
+    margin: 30px auto;
     box-shadow: #bbbbbb 1px 5px 8px;
 }
 
 .link-menu ul{
     display: flex;
     gap: 20px;
+}
+
+.number{
+    flex: 1;
+}
+
+.voyage{
+    display: flex;
+    flex: 3;
+}
+
+.depart, .arrivee{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.aeroport{
+    font-weight: bold;
+    font-size: 22px;
+    color: #666666;
+}
+
+.date{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.img-plane{
+    flex: 1;
+}
+
+.img-plane img{
+    width: 50px;
+    height: auto;
+}
+
+.vol-option{
+    flex: 1;
 }
