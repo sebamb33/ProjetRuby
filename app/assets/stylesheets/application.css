@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body{
+    font-family: "Lato";
+}
+
+.vol{
+    background: #eeeeee;
+    padding: 2px 20px;
+}

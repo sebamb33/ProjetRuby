@@ -3,7 +3,7 @@ class VolsController < ApplicationController
 
   # GET /vols or /vols.json
   def index
-    @vols = Vol.all
+    @pagy, @vols = pagy(Vol.all)
   end
 
   # GET /vols/1 or /vols/1.json

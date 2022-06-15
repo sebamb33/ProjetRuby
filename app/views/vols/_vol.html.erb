@@ -1,4 +1,4 @@
-<div id="<%= dom_id vol %>">
+<div id="<%= dom_id vol %>" class="vol">
   <p>
     <strong>Numero:</strong>
     <%= vol.numero %>
@@ -6,12 +6,12 @@
 
   <p>
     <strong>Id aeroport depart:</strong>
-    <%= vol.id_aeroport_depart %>
+    <%= vol.departure_aeroport_id %>
   </p>
 
   <p>
     <strong>Id aeroport arrivee:</strong>
-    <%= vol.id_aeroport_arrivee %>
+    <%= vol.arrival_aeroport_id %>
   </p>
 
   <p>
@@ -20,7 +20,7 @@
   </p>
 
   <p>
-    <strong>Date depart:</strong>
+    <strong>Date de depart:</strong>
     <%= vol.date_depart %>
   </p>
 
