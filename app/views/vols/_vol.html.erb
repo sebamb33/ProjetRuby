@@ -15,13 +15,13 @@
   </p>
 
   <p>
-    <strong>Duree:</strong>
-    <%= vol.duree %>
+    <strong>Date de depart:</strong>
+    <%= vol.date_depart.strftime("%d %B %Y  %H:%M") %>
   </p>
 
   <p>
-    <strong>Date de depart:</strong>
-    <%= vol.date_depart.strftime("%d %B %Y") %>
+    <strong>Date d'arrivée:</strong>
+    <%= (vol.date_depart + vol.duree.minutes).strftime("%d %B %Y  %H:%M") %>
   </p>
 
   <p>
@@ -32,6 +32,10 @@
   <p>
     <strong>Nb place business:</strong>
     <%= vol.nb_place_business %>
+  </p>
+
+  <p>
+    <%= link_to "Show this vol", vol %>
   </p>
 
 </div>
