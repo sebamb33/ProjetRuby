@@ -1,0 +1,12 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Vols</h1>
+
+<div id="vols">
+  <% @vols.each do |vol| %>
+    <%= render vol %>
+
+  <% end %>
+</div>
+
+<%= pagy_nav(@pagy).html_safe %>

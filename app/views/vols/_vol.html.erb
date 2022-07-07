@@ -1,0 +1,37 @@
+<div id="<%= dom_id vol %>" class="vol">
+
+  <div class="number">
+    <strong>Numero:</strong>
+    <div>
+      <%= vol.numero %>
+    </div>
+  </div>
+
+  <div class="voyage">
+    <div class="depart">
+        <div class="aeroport">
+          <%= vol.departure_aeroport.libelle %>
+        </div>
+        <div class="date">
+          <%= vol.date_depart.strftime("%d %B %Y  %H:%M") %>
+        </div>
+    </div>
+    <div class="img-plane">
+      <%= image_tag "plane.png" %>
+    </div>
+    <div class="arrivee">
+      <div class="aeroport">
+        <%= vol.arrival_aeroport.libelle %>
+      </div>
+      <div class="date">
+        <%= (vol.date_depart + vol.duree.minutes).strftime("%d %B %Y  %H:%M") %>
+      </div>
+    </div>
+  </div>
+
+  <div class="vol-option">
+    <%= link_to "Show this vol", vol %>
+  </div>
+
+
+</div>

@@ -13,3 +13,95 @@
  *= require_tree .
  *= require_self
  */
+
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body{
+    font-family: "Lato";
+    margin: auto 50px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background: #FFF;
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+    color: #000;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.main{
+    width: 80%;
+    margin: 100px auto 0px auto;
+}
+
+.title{
+    font-family: "Paytone One";
+    font-weight: 700;
+}
+
+.vol{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #eeeeee;
+    padding: 20px;
+    margin: 30px auto;
+    box-shadow: #bbbbbb 1px 5px 8px;
+}
+
+.link-menu ul{
+    display: flex;
+    gap: 20px;
+}
+
+.number{
+    flex: 1;
+}
+
+.voyage{
+    display: flex;
+    flex: 3;
+}
+
+.depart, .arrivee{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.aeroport{
+    font-weight: bold;
+    font-size: 22px;
+    color: #666666;
+}
+
+.date{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.img-plane{
+    flex: 1;
+}
+
+.img-plane img{
+    width: 50px;
+    height: auto;
+}
+
+.vol-option{
+    flex: 1;
+}
