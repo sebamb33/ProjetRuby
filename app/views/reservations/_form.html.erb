@@ -1,24 +1,13 @@
 <%= form_with(model: reservation) do |form| %>
-  <% if reservation.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(reservation.errors.count, "error") %> prohibited this reservation from being saved:</h2>
-
-      <ul>
-        <% reservation.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
   <div>
     <%= form.label :id_vol, style: "display: block" %>
-    <%= form.number_field :id_vol %>
+    <div class="id_vol"><%=@flight.id %></div>
   </div>
-
+  <%= form.hidden_field :vol_id, value: @flight.id %>
+  <%= form.hidden_field :user_id, value: current_user.id %>
   <div>
     <%= form.label :id_user, style: "display: block" %>
-    <%= form.number_field :id_user %>
+    <div class="id_user"><%=current_user.id%></div>
   </div>
 
   <div>
@@ -27,7 +16,7 @@
   </div>
 
   <div>
-    <%= form.label :choix_place, style: "display: block" %>
+    <%= form.label "Place économique/place buisness", style: "display: block" %>
     <%= form.check_box :choix_place %>
   </div>
 

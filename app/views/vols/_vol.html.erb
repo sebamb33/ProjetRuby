@@ -33,5 +33,11 @@
     <%= link_to "Show this vol", vol %>
   </div>
 
-
+  <p>
+    <strong>Nb place business:</strong>
+    <%= vol.nb_place_business %>
+  </p>
+  <div>
+    <%=link_to "réserver", controller: :reservations, action: :new, vol_id: vol.id %>
+  </div>
 </div>

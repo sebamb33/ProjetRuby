@@ -3,7 +3,7 @@ class ReservationsController < ApplicationController
   before_action :authenticate_user!
   # GET /reservations or /reservations.json
   def index
-    @reservations = Reservation.all
+    @reservations = Reservation.where(user_id: current_user.id)
   end
 
   # GET /reservations/1 or /reservations/1.json
@@ -13,6 +13,12 @@ class ReservationsController < ApplicationController
   # GET /reservations/new
   def new
     @reservation = Reservation.new
+    @reservation.vol_id = params[:vol_id]
+    @flight  = Vol.find(params[:vol_id])
+    respond_to do |format|
+      format.html { render 'reservations/new'}
+      format.json { render flight: @flight }
+    end
   end
 
   # GET /reservations/1/edit
@@ -22,7 +28,6 @@ class ReservationsController < ApplicationController
   # POST /reservations or /reservations.json
   def create
     @reservation = Reservation.new(reservation_params)
-
     respond_to do |format|
       if @reservation.save
         format.html { redirect_to reservation_url(@reservation), notice: "Reservation was successfully created." }
@@ -65,6 +70,6 @@ class ReservationsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def reservation_params
-      params.require(:reservation).permit(:id_vol, :id_user, :nb_passagers, :choix_place)
+      params.require(:reservation).permit(:vol_id, :user_id, :nb_passagers, :choix_place)
     end
 end

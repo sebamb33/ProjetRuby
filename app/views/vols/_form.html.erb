@@ -22,6 +22,7 @@
   </div>
 
   <div>
+
     <%= form.label :id_aeroport_arrivee, style: "display: block" %>
     <%= form.number_field :id_aeroport_arrivee %>
   </div>
@@ -47,6 +48,6 @@
   </div>
 
   <div>
-    <%= form.submit %>
+    <%=link_to "vol", action: "show", id: @vol%>
   </div>
 <% end %>
