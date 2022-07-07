@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4248d4f7-6da3-4d8f-a317-f4b55701128f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+    <list default="true" id="4248d4f7-6da3-4d8f-a317-f4b55701128f" name="Changes" comment="partie reservations">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/reservations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/reservations_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/reservations/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/reservations/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/reservations/_reservation.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/reservations/_reservation.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/vols/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/vols/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/vols/_vol.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/vols/_vol.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20220614131645_devise_create_users.rb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,8 +152,24 @@
       <updated>1655219890969</updated>
       <workItem from="1655219892910" duration="730000" />
       <workItem from="1655295075771" duration="336000" />
-      <workItem from="1655295417155" duration="7546000" />
+      <workItem from="1655295417155" duration="11794000" />
+      <workItem from="1657216894174" duration="2169000" />
     </task>
+    <task id="LOCAL-00001" summary="partie reservations">
+      <created>1655306833609</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1655306833609</updated>
+    </task>
+    <task id="LOCAL-00002" summary="partie reservations">
+      <created>1655306850843</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655306850843</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +185,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="partie reservations" />
+    <option name="LAST_COMMIT_MESSAGE" value="partie reservations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -198,6 +213,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ProjetRuby@Development__ProjetRuby.rcov" NAME="Development: ProjetRuby Coverage Results" MODIFIED="1655306404012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ProjetRuby" />
+    <SUITE FILE_PATH="coverage/ProjetRuby@Development__ProjetRuby.rcov" NAME="Development: ProjetRuby Coverage Results" MODIFIED="1657216992885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ProjetRuby" />
   </component>
 </project>
